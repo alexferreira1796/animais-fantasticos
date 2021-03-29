@@ -1,13 +1,13 @@
 {
-  "name": "aniamis-fantasticos",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto Final Curso JavaScript Completo Origamid",
   "main": "index.html",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
-  "author": "",
+  "author": "Alex Ferreira",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.13.10",

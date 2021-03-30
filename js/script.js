@@ -8,7 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 import initFetchAnimais from './modules/fetch-animais.js';
-import initFetchBitcon from './modules/fetch-bitcoin.js';
+import fetchBitcon from './modules/fetch-bitcoin.js';
 
 // Scroll Suave
 const scroll = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -34,5 +34,8 @@ initAnimacaoScroll();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
+
+// Fetch Animais
 initFetchAnimais();
-initFetchBitcon();
+// Fetch Bitcoin
+fetchBitcon('https://blockchain.info/ticker', '.btc-preco');

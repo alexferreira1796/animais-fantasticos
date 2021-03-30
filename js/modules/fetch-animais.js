@@ -19,8 +19,8 @@ export default function initFetchAnimais() {
       });
       const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros');
       animaNumeros.init();
-    } catch (err) {
-      console.log(Error(err));
+    } catch (erro) {
+      console.log(erro);
     }
   }
   fetchAnimais('./api/animais.json');

@@ -1,4 +1,4 @@
-import initAnimaNumeros from './anima-numeros.js';
+import AnimaNumeros from './anima-numeros.js';
 
 export default function initFetchAnimais() {
   const gridNumbers = document.querySelector('.numeros-grid');
@@ -17,7 +17,8 @@ export default function initFetchAnimais() {
       json.forEach((item) => {
         createList(item);
       });
-      initAnimaNumeros();
+      const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros');
+      animaNumeros.init();
     } catch (err) {
       console.log(Error(err));
     }
